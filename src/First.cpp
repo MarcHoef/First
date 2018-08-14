@@ -9,7 +9,8 @@
 #include <iostream>
 #include <string>
 using namespace std;
-blaa test
+
+
 class Auto {
 public:
 	void drive(){
