@@ -8,33 +8,24 @@
 
 #include <iostream>
 #include <string>
+#include <stdlib.h>
+#include <time.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <windows.h>
+#include <Vehikel.h>
+#include <Auto.h>
 using namespace std;
 
 
-class Auto {
-public:
-	void drive(){
-		cout << "nniiiuuuuu" << endl;
-	}
-
-};
-
-
-int add(int x, int y){
-	int z=x+y;
-	return z;
-}
-
-void changeThatShit(int *x){
-	*x = *x+ 42;
-}
 
 int main() {
-	int test=add(2,3);
-	changeThatShit(&test);
-	std::string s = std::to_string(test);
-	cout << "test" + s << endl; // prints !!!Hello World!!!
-	Auto audi;
-	audi.drive();
+	Auto testAuto;
+	//testAuto.setSpeed(2);
+	//cout << testAuto.getSpeed() << endl;
+	//testAuto.setSpeed(0.1);
+
+	testAuto.abschliessen();
+	cout << testAuto.getMaxPassagiere() << endl;
 	return 0;
 }
